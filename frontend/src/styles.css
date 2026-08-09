@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root { font-family: Manrope, system-ui, sans-serif; color: #12304f; background: #f7fbff; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; background: #f7fbff; }
+button, input { font: inherit; }
+button { cursor: pointer; border: 0; }
+button:disabled { cursor: wait; opacity: .6; }
+main { max-width: 1080px; margin: 0 auto; padding: 70px 28px; }
+.hero { display: flex; justify-content: space-between; align-items: end; margin-bottom: 36px; }
+.eyebrow { color: #1671cc; letter-spacing: .17em; font-family: 'DM Mono', monospace; font-size: 11px; margin: 0 0 8px; }
+h1 { color: #0b315a; font-size: clamp(44px, 8vw, 74px); letter-spacing: -0.07em; line-height: .92; margin: 0; }
+h2 { color: #12304f; font-size: 18px; margin: 0 0 4px; letter-spacing: -.03em; }
+.subtitle, .panel p { color: #58718c; margin: 0; font-size: 14px; }
+.updated { color: #315a7c; text-align: right; font: 12px 'DM Mono', monospace; line-height: 1.7; }.updated span { color: #7891aa; }
+.summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 18px; }.summary div, .panel { background: #ffffff; border: 1px solid #cfe3f5; border-radius: 12px; box-shadow: 0 8px 24px rgba(44, 111, 171, .07); }
+.summary div { padding: 18px 20px; }.summary span { color: #63809b; display: block; font-size: 12px; }.summary strong { color: #12304f; display: block; font: 28px 'DM Mono', monospace; margin-top: 4px; }
+.panel { padding: 22px; margin-bottom: 18px; }.add-panel { display: flex; gap: 28px; justify-content: space-between; align-items: center; }.add-panel form { display: flex; gap: 8px; width: min(530px, 100%); }
+input { color: #12304f; background: #ffffff; border: 1px solid #a9cde9; border-radius: 8px; padding: 11px 13px; min-width: 0; flex: 1; outline-color: #2c8de3; } input::placeholder { color: #86a0b9; }
+button { background: #287ed1; color: #ffffff; padding: 11px 15px; border-radius: 8px; font-weight: 800; font-size: 13px; white-space: nowrap; } button:hover:not(:disabled) { background: #176cb8; }
+.section-heading { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }.quiet { background: #ffffff; color: #276493; border: 1px solid #a9cde9; padding: 7px 10px; font-weight: 600; }.quiet:hover { border-color: #287ed1; color: #176cb8; background: #edf7ff; }
+.table-wrap { overflow-x: auto; } table { border-collapse: collapse; width: 100%; min-width: 680px; } th { color: #63809b; text-align: left; text-transform: uppercase; letter-spacing: .08em; font: 10px 'DM Mono', monospace; padding: 0 10px 11px; } td { border-top: 1px solid #dcebf7; padding: 15px 10px; color: #315a7c; font-size: 13px; } td:first-child { max-width: 410px; } a { color: #123f70; text-decoration: none; word-break: break-all; } a:hover { color: #176cb8; } small { color: #bb4a4a; display: block; font: 10px 'DM Mono', monospace; margin-top: 5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.badge { display: inline-flex; align-items: center; gap: 6px; text-transform: capitalize; font: 11px 'DM Mono', monospace; }.badge i { height: 7px; width: 7px; border-radius: 50%; background: #d29842; }.badge.up { color: #16805d; }.badge.up i { background: #23a377; box-shadow: 0 0 8px rgba(35, 163, 119, .4); }.badge.down { color: #be4545; }.badge.down i { background: #d95c5c; }.badge.pending { color: #a46a1b; }
+.actions { white-space: nowrap; }.icon { background: transparent; color: #63809b; padding: 5px 8px; font-size: 20px; vertical-align: middle; }.icon:hover { color: #c24242; background: transparent; }.empty { color: #63809b; text-align: center; padding: 35px 0 12px; }.error { background: #fff2f2; color: #a33131; border: 1px solid #f0b6b6; border-radius: 8px; padding: 12px 14px; font-size: 13px; }
+@media (max-width: 700px) { main { padding: 40px 16px; }.hero, .add-panel { align-items: start; flex-direction: column; }.updated { text-align: left; }.summary { gap: 8px; }.summary div { padding: 14px; }.summary strong { font-size: 23px; }.add-panel form { width: 100%; flex-direction: column; } }
